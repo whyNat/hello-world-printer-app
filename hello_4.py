@@ -15,8 +15,10 @@ class SearchText(unittest.TestCase):
         driver = self.driver
         driver.get("http://www.wp.pl")
         results = driver.find_elements_by_xpath('//div[contains(text(),"' + search_word + '")]')
-        print(results[0].text)
+        #print(results[0].text)
         self.assertGreater(len(results), 1)
+        for r in results:
+            print(r.text)
 
 #//div[]
 
