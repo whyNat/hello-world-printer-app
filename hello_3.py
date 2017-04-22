@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*
 import unittest
 from selenium import webdriver
 from time import sleep
@@ -23,6 +24,16 @@ class SearchText(unittest.TestCase):
         link.click()
         sleep(5)
 
+    def test_search_by_text2(self):
+        driver = self.driver
+        driver.get("http://www.wsb.pl")
+        # get the search textbox
+        #search_field = driver.find_element_by_css_selector("#block-menu-menu-wybierz-studia-w-wsb > div > ul > li:nth-child(2) > a")
+        # enter search keyword and submit
+        link = driver.find_element_by_link_text("Studia podyplomowe")
+        link.click()
+        sleep(5)
+
 
     def tearDown(self):
         # close the browser window
@@ -30,4 +41,4 @@ class SearchText(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)
