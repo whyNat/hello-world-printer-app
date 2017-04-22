@@ -1,5 +1,6 @@
 import unittest
 from selenium import webdriver
+from time import sleep
 
 
 class SearchText(unittest.TestCase):
@@ -16,10 +17,11 @@ class SearchText(unittest.TestCase):
     def test_search_by_text(self):
         driver = self.driver
         # get the search textbox
-        search_field = driver.find_element_by_name("q")
+        search_field = driver.find_element_by_id("lst-ib")
         search_field.clear()
         # enter search keyword and submit
         search_field.send_keys("Selenium")
+        sleep(5)
         search_field.submit()
 
     def tearDown(self):
