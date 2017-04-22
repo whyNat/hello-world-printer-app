@@ -5,8 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
-import my_credentals as mc
-from time import sleep
+
 
 valid_name = "Dick"
 valid_surname = "Laurent"
