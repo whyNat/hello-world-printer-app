@@ -23,6 +23,7 @@ class SearchText(unittest.TestCase):
         search_field.send_keys("Selenium")
         sleep(5)
         search_field.submit()
+        sleep(5)
 
     def tearDown(self):
         # close the browser window
