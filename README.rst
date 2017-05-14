@@ -1,5 +1,13 @@
 Simple Flask App
 ================
+Na początku jako admin:
+
+pip instal python-pip
+pip install -U pip
+pip install virtualenv
+pip install virtualenvwrapper
+
+
 
 Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć 
 o Continuous Integration, Continuous Delivery i Continuous Deployment.
