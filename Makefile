@@ -21,8 +21,9 @@ docker_run: docker_build
 
 test_cov:
 	PYTHONPATH=. py.test --verbose -s --cov=.
+
 test_xunit:
-	PYTHONPATH=. py.test -s --cov=. --cov-report xml --junit-xml=test_results.xml
+	PYTHONPATH=. py.test -s --cov=.  --cov-report xml --junit-xml=test_results.xml
 
 USERNAME=whynat
 TAG=$(USERNAME)/hello-world-printer
